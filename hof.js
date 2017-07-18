@@ -6,11 +6,14 @@ var people = [
   {name: "Jasmine", age: 39}
 ]
 
+
 // #1: Use the `map` array method to create a new array containing the ages of each
 // person in the `people` array. Assign the returned array to a variable
 // called `peoplesAges`.
 // Type your solution immediately below this line:
-
+var poopleAges = people.map(function(r){
+  return r.name + "is age" + r.age
+})
 
 
 
@@ -18,3 +21,7 @@ var people = [
 // persons from the `people` array who are older than 35. Assign the returned array
 // to a variable called `peopleOlderThan35`.
 // Type your solution immediately below this line:
+var peopleOlderThan35 = people.filter(chechAge)
+ function chechAge(person) {
+   return person.age > 35
+ }
